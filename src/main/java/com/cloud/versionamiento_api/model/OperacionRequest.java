@@ -1,8 +1,13 @@
 package com.cloud.versionamiento_api.model;
 
+import jakarta.validation.constraints.NotNull;
+
 public class OperacionRequest {
 
+    @NotNull(message = "El numero1 es obligatorio")
     private Double numero1;
+
+    @NotNull(message = "El numero2 es obligatorio")
     private Double numero2;
 
     public Double getNumero1() {

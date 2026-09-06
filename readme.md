@@ -18,6 +18,14 @@ o	Añadir los cambios al área de preparación.
 o	Realizar el segundo commit, utilizando el tipo de commit correspondiente a una nueva funcionalidad compatible hacia atrás (incremento de versión menor).
 o	Mensaje de commit esperado (ejemplo): Version xxxx: Creacion de nuevo endpoint 
 
+3. Corrección de Incidencia (Commit 3)
+•	Acción: Simular la detección de un bug en alguno de los endpoints anteriores (por ejemplo, un fallo en la validación de parámetros, un error ortográfico en el JSON de respuesta o un manejo nulo) y corregirlo.
+•	Git y Versionado:
+o	Aplicar el parche o corrección en el código.
+o	Realizar el tercer commit, utilizando el tipo de commit correspondiente a una corrección de errores (incremento de versión de parche).
+o	Mensaje de commit esperado (ejemplo): Version xxx: Fix de bug encontrado
+
+
 ## Endpoints
 
 ### Estado del microservicio
