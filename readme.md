@@ -10,3 +10,44 @@ Los estudiantes deberán construir, versionar y mantener un microservicio básic
 o	Inicializar el repositorio Git.
 o	Añadir los archivos (git add) y realizar el primer commit siguiendo la convención semántica correspondiente a un lanzamiento inicial estable.
 o	Mensaje de commit esperado (ejemplo): feat(core): version 1.0.0: Creacion de microservicio
+
+2. Incorporación de Nueva Funcionalidad  (Commit 2)
+•	Acción: Agregar una nueva característica (feature) al microservicio. Esto implica crear un nuevo endpoint que aporte valor funcional al sistema (por ejemplo, un endpoint que reciba datos por POST, o que consulte una operación matemática/lógica específica).
+•	Git y Versionado:
+o	Añadir los cambios al área de preparación.
+o	Realizar el segundo commit, utilizando el tipo de commit correspondiente a una nueva funcionalidad compatible hacia atrás (incremento de versión menor).
+o	Mensaje de commit esperado (ejemplo): Version xxxx: Creacion de nuevo endpoint 
+
+## Endpoints
+
+### Estado del microservicio
+
+GET /api/status
+
+Ejemplo de respuesta:
+
+```json
+{
+  "status": "OK",
+  "mensaje": "Microservicio funcionando correctamente",
+  "version": "1.1.0"
+}
+```
+
+### Sumar dos números
+
+POST /api/sumar
+
+Ejemplo de solicitud:
+```json
+{
+  "numero1": 10,
+  "numero2": 5
+}
+```
+Ejemplo de respuesta:
+```json
+{
+  "resultado": 15.0
+}
+```
